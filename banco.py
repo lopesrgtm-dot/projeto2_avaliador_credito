@@ -9,4 +9,5 @@ else:
     print("Idade aprovada, prosseguindo..")
     
 if idade > 17:
-    float(input("Digite o valor do emprestimo R$: 
+    emprestimo = float(input("Digite o valor do emprestimo R$: "))
+    parcelas = float(input("Quantas parcelas: "))
