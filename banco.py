@@ -11,3 +11,10 @@ else:
     parcelas = float(input("Quantas parcelas: "))
     valor_mensal = emprestimo / parcelas
     print(f" valor mensal das parcelas R$: {valor_mensal}")
+
+    sparceleas = salario * 0.30 #identifica o valor de 30% do salario
+
+    if parcelas > sparceleas:
+        print("Empréstimo NEGADO (renda insuficiente)")
+
+        
