@@ -16,5 +16,7 @@ else:
 
     if parcelas > sparceleas:
         print("Empréstimo NEGADO (renda insuficiente)")
+    else:
+        print("Empréstimo APROVADO! Parabéns!")
 
         
