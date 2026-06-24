@@ -7,7 +7,7 @@ if idade <18 :
     print("Empréstimo negado por idade")
 else:
     print("Idade aprovada, prosseguindo..")
-    
-if idade > 17:
     emprestimo = float(input("Digite o valor do emprestimo R$: "))
     parcelas = float(input("Quantas parcelas: "))
+    valor_mensal = emprestimo / parcelas
+    print(f" valor mensal das parcelas R$: {valor_mensal}")
