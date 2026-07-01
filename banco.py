@@ -1,22 +1,24 @@
-print("Bem-vindo ao Banco Python")
+def validar_emprestimo(salario_mensal, valor_parcela):
 
-salario = float(input("Salário Mensal R$: "))
-idade = int(input("Idade: "))
+    print("Bem-vindo ao Banco Python")
 
-if idade <18 :
-    print("Empréstimo negado por idade")
-else:
-    print("Idade aprovada, prosseguindo..")
-    emprestimo = float(input("Digite o valor do emprestimo R$: "))
-    parcelas = float(input("Quantas parcelas: "))
-    valor_mensal = emprestimo / parcelas
-    print(f" valor mensal das parcelas R$: {valor_mensal}")
+    salario = float(input("Salário Mensal R$: "))
+    idade = int(input("Idade: "))
 
-    sparceleas = salario * 0.30 #identifica o valor de 30% do salario
-
-    if parcelas > sparceleas:
-        print("Empréstimo NEGADO (renda insuficiente)")
+    if idade <18 :
+        print("Empréstimo negado por idade")
     else:
-        print("Empréstimo APROVADO! Parabéns!")
+        print("Idade aprovada, prosseguindo..")
+        emprestimo = float(input("Digite o valor do emprestimo R$: "))
+        parcelas = float(input("Quantas parcelas: "))
+        valor_mensal = emprestimo / parcelas
+        print(f" valor mensal das parcelas R$: {valor_mensal}")
+
+        sparceleas = salario * 0.30 #identifica o valor de 30% do salario
+
+        if parcelas > sparceleas:
+            print("Empréstimo NEGADO (renda insuficiente)")
+        else:
+            print("Empréstimo APROVADO! Parabéns!")
 
         
